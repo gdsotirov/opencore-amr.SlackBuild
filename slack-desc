@@ -1,0 +1,12 @@
+opencore-amr: OpenCORE AMR (An OpenCORE AMR-WB/NB implementation)
+opencore-amr:
+opencore-amr: This library contains an implementation of the 3GPP TS 26.173
+opencore-amr: specification for the Adaptive Multi-Rate - Wide (AMR-WB) and
+opencore-amr: Narrow (AMR-NB) band speech decoders.  The implementation is
+opencore-amr: derived from the OpenCORE framework, part of Google's Android
+opencore-amr: project.
+opencore-amr:
+opencore-amr:
+opencore-amr:
+opencore-amr:
+opencore-amr: Packaged by Georgi D. Sotirov <gdsotirov@dir.bg>
