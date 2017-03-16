@@ -17,13 +17,13 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 # 
-# $Id: opencore-amr.SlackBuild,v 1.6 2017/03/01 21:46:19 gsotirov Exp $
+# $Id: opencore-amr.SlackBuild,v 1.7 2017/03/16 20:39:56 gsotirov Exp $
 #
 
 . ../../slack-package.conf
 
 NAME=opencore-amr
-VERSION=0.1.4
+VERSION=0.1.5
 ARCH=${ARCH:-i586}
 BUILD=${BUILD:-1}
 
@@ -71,6 +71,7 @@ make DESTDIR=$PKG install || exit 6
 # Prepare
 ( cd $PKG; strip_lib )
 ( cd $SRC; create_docs $PKG ${NAME}-${VERSION} )
+( cd $PKG/usr/doc/${NAME}-${VERSION}; mv LICENSE COPYING )
 
 mkdir -p $PKG/install
 install -m 644 $CWD/slack-desc     $PKG/install/slack-desc
